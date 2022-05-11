@@ -1,12 +1,3 @@
-h1, p {
-  text-align: center;
-}
-ul:hover, ol:hover {
-  background-color:blueviolet ;
-}
-li:active {
-  color: red;
-}
-li {
-  list-style: none;
+div:hover {
+  border: 5px solid red;
 }

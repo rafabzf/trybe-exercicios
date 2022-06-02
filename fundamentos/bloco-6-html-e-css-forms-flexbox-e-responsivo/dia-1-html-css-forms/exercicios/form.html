@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Inscrição TrybeTrip</h1>
+  <form>
+    <fieldset>
+      <label for="fullName">Nome:</label>
+      <input type="text" id="fullName" name="fullName" minlength="10" maxlength="40" required>
+      
+      <br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" minlength="10" maxlength="50" required>
+      
+      <br>
+      
+      <label for="favoriteDestiny">Destino favorito:</label>
+      <label for="Destiny-1">Cidade</label>
+      <input type="radio" class="radios" >
+      <label for="Destiny-2">Campo</label>
+      <input type="radio" class="radios" >
+      <label for="Destiny-3">Praia</label>
+      <input type="radio" class="radios">
+      <label for="Destiny-4">Montanhas</label>
+      <input type="radio" class="radios">
+
+      <br>
+
+      <label for="whyMe">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+      <br>
+      <textarea name="whyMe" id="whyMe" cols="30" rows="10" maxlength="500"></textarea>
+      
+      <br>
+
+      <label for="date">Qual a melhor data para realizar sua viagem?</label>
+      <input type="date" id="date">
+
+      <br>
+      
+      <label for="would">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+      <input type="checkbox" name="would" id="would">
+
+      <br>
+
+      <label for="agree" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+      <input type="checkbox" name="agree" id="agree" required>
+    </fieldset>
+  </form>
+
+</body>
+</html>

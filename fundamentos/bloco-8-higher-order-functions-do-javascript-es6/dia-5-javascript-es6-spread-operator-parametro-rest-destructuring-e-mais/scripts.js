@@ -1,11 +1,20 @@
-// Faça uma lista com as suas frutas favoritas
-const specialFruit = ['banana', 'maçã', 'uva'];
 
-// Faça uma lista de complementos que você gostaria de adicionar
-const additionalItens = ['melancia', 'abacaxi', 'laranja'];
-
-const fruitSalad = (fruit, additional) => {
-  return [...fruit, ...additional];
+const user = {
+    name: 'Maria',
+    age: 21,
+    nationality: 'Brazilian',
+};
+  
+const jobInfos = {
+    profession: 'Software engineer',
+    squad: 'Rocket Landing Logic',
+    squadInitials: 'RLL',
 };
 
-console.log(fruitSalad(specialFruit, additionalItens));
+const dadosTotais = {
+    ...user, 
+    ...jobInfos,
+}
+
+const { name, age, nationality, profession, squad, squadInitials } = dadosTotais;
+console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);

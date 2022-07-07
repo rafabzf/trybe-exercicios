@@ -1,29 +1,13 @@
-const countryName = ({ name }) => console.log(`Returned country is ${name}`);
-const countryCurrency = ({ name, currency }) => console.log(`${name}'s currency is the ${currency}`);
+const messageDelay = () => Math.floor(Math.random() * 5000);
 
-const delay = (maxMilliseconds = 5000) => Math.floor(Math.random() * maxMilliseconds);
-
-const printErrorMessage = (error) => console.log(`Error getting country: ${error}`);
-
-const getCountry = (onSuccess, onFail) => {
-  setTimeout(() => {
-    const didOperationSucceed = Math.random() >= 0.5;
-    if(didOperationSucceed) {
-      const country = {
-        name: "Brazil",
-        hdi: 0.759,
-        currency: "Real",
-      };
-      onSuccess(country);
-    } else {
-      const errorMessage = "Country could not be found";
-      onFail(errorMessage);
-    }
-  }, delay());
+const getMarsTemperature = () => {
+  const maxTemperature = 58;
+  return Math.floor(Math.random() * maxTemperature);
 };
 
-// Deve imprimir "Returned country is Brazil" no sucesso ou "Error getting country: Country could not be found" em caso de falha
-getCountry(countryName, printErrorMessage);
+// crie a função sendMarsTemperature abaixo
+const sendMarsTemperature = () => {
+    setTimeout(() => console.log(`Mars temperature is: ${getMarsTemperature()} degree Celsius`), messageDelay());
+}
 
-// Deve imprimir "Brazil's currency is the Real" no sucesso, ou "Error getting country: Country could not be found" em caso de falha
-getCountry(countryCurrency, printErrorMessage);
+sendMarsTemperature();
